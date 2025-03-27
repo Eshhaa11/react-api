@@ -12,11 +12,14 @@ function RandomUser () {
             console.log(data);
             setUser(data.results[0]);
         } catch(error) {
-            console.log("ërror fetching data")
+            console.log("ërror fetching data", error);
 
-        }
-        
+        };
 
+        useEffect(() => {
+              fetchUser();
+        }, []);
+   
 
         }
 
