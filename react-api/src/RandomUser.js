@@ -6,7 +6,10 @@ function RandomUser () {
     const [user, setUser] = useState("null");
 
     const fetchUser = async () => {
-        
+        try {
+            const response = await fetch ('https://randomuser.me/api/');
+        }
+
     }
     return (
         <div>
