@@ -1,4 +1,5 @@
 import React from "react";
+import RandomUser from './RandomUser'
 
 function App() {
   return (
