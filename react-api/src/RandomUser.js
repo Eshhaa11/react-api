@@ -3,7 +3,7 @@ import react, {useState, useEffect} from "react";
 
 function RandomUser () {
 
-    const [user, setUser] = useState("");
+    const [user, setUser] = useState("null");
     return (
         <div>
             <h1>Random User</h1>
