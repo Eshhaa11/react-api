@@ -1,4 +1,5 @@
-import react from "react";
+import react, {useState, useEffect} from "react";
+
 
 function RandomUser () {
     return (
