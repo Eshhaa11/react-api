@@ -17,17 +17,22 @@ function RandomUser () {
         };
 
         useEffect(() => {
-              fetchUser();
-        }, []);
-   
-
-        }
+            fetchUser(); 
+        }, []); 
 
     }
     return (
         <div>
             <h1>Random User</h1>
+            {user && (
+            <div>
+                <p>Name: {user.name.first} {user.name.last}</p>
+                <p>Email: {user.email}</p>
+            </div>
+        )}
 
         </div>
     );
 }
+
+export default RandomUser;
