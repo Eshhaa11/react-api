@@ -11,7 +11,12 @@ function RandomUser () {
             const data = await response.json();
             console.log(data);
             setUser(data.results[0]);
-            
+        } catch(error) {
+            console.log("ërror fetching data")
+
+        }
+        
+
 
         }
 
