@@ -5,6 +5,7 @@ import axios from "axios";
 function RandomUser () {
 
     const [error, setError] = useState([]);
+    const [data, setData] = useState([])
 
     const fetchUser = async () => {
        try {
