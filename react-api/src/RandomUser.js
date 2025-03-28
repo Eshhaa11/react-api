@@ -1,4 +1,5 @@
-import react, {useState, useEffect, axios} from "react";
+import react, {useState, useEffect} from "react";
+import axios from "axios";
 
 
 function RandomUser () {
