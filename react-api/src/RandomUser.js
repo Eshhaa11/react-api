@@ -4,15 +4,18 @@ import axios from "axios";
 
 function RandomUser () {
 
-    const [error, setError] = useState([])
+    const [error, setError] = useState([]);
     const [data, setData] = useState([])
 
     const fetchUser = async () => {
        try {
          const response = await axios.get("https://randomuser.me/api/")
-        console.log(response)
+         if(response.status === 200) {
+            console.log(response)
+         }
     }   catch (error){
-        setError ([error])
+        console.error(error.response)
+        setError ([error.response.data])
     }
 
 }
