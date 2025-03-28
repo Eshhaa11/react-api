@@ -1,9 +1,9 @@
-import react, {useState, useEffect} from "react";
+import react, {useState, useEffect, axios} from "react";
 
 
 function RandomUser () {
     const fetchUser = async () => {
-        const response = awaitaxios.get("https://randomuser.me/api/")
+        const response = await axios.get("https://randomuser.me/api/")
         console.log(response)
     }
 
