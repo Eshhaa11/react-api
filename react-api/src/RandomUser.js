@@ -3,6 +3,7 @@ import react, {useState, useEffect} from "react";
 
 function RandomUser () {
     const fetchUser = async () => {
+        const response = awaitaxios.get("https://randomuser.me/api/")
     }
 
     useEffect(() => {
