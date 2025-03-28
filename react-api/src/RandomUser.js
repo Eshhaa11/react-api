@@ -11,7 +11,7 @@ function RandomUser () {
        try {
          const response = await axios.get("https://randomuser.me/api/")
          if(response.status === 200) {
-            console.log(response)
+            console.log(response.data.results)
          }
     }   catch (error){
         console.error(error.response)
