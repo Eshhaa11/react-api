@@ -28,7 +28,10 @@ function RandomUser () {
     return (
         <>
         {error.length > 0 && error.map ((v,i) => <span key={i}>{v}</span>)}
+        <h1>Random User</h1>
         </>
+
+    
         
     );
 }
