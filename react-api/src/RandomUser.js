@@ -3,12 +3,11 @@ import react, {useState, useEffect} from "react";
 
 function RandomUser () {
     const fetchUser = async () => {
-    
-        useEffect(() => {
-            fetchUser(); 
-        }, []); 
-
     }
+
+    useEffect(() => {
+        fetchUser(); 
+    }, []); 
 
     return (
         <div>
