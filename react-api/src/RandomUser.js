@@ -9,7 +9,7 @@ function RandomUser () {
         }, []); 
 
     }
-    
+
     return (
         <div>
             <h1>Random User</h1>
