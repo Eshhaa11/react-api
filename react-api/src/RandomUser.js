@@ -7,9 +7,14 @@ function RandomUser () {
     const [user, getUser] = useState(1);
 
     const fetchUser = async () => {
-        const response = await axios.get("https://randomuser.me/api/")
+       try {
+         const response = await axios.get("https://randomuser.me/api/")
         console.log(response)
+    }   catch (error){
+        setError ([error])
     }
+
+}
 
     useEffect(() => {
         fetchUser(); 
@@ -17,10 +22,10 @@ function RandomUser () {
 
 
     return (
-        <div>
-            <h1>Random User</h1>
-
-        </div>
+        <>
+        {error.length > 0 && error.map ((v,i) => <span key={i}>{v}</span>)}
+        </>
+        
     );
 }
 
